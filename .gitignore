@@ -1,2 +1,2 @@
 *.csv
-*.txt
+/data/Region_Mobility_Report_CSVs
