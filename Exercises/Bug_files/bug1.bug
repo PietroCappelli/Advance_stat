@@ -1,0 +1,14 @@
+model {
+
+# a uniform prior for p
+p  ̃ dbeta(alpha, beta);
+
+# data likelihood
+for (i in 1: length (X)) {
+X[i]  ̃ dbin(p);
+}
+
+
+# Predicted data , given p
+y  ̃ dbin(p, n_next );
+}
